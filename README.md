@@ -1,3 +1,4 @@
+# Iptables Sentinel Kill Switch for WireGuard and OpenVPN
 ## How to Install
 
 ```bash
