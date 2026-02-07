@@ -1629,8 +1629,11 @@ setup_iptables() {
         echo "iptables -X"
         echo "iptables -Z"
         echo "nmcli connection up "$conn""
-        #echo "sleep 15"
-
+        echo "sleep 3"
+        echo "nmcli connection up "$conn""
+        echo "sleep 3"
+        echo "nmcli connection up "$conn""
+        echo "sleep 3"
         echo "iptables -P INPUT DROP"
         echo "iptables -P FORWARD DROP"
         echo "iptables -P OUTPUT DROP"
@@ -1748,6 +1751,11 @@ echo "";
         echo "iptables -X"
         echo "iptables -Z"
         echo "nmcli connection up "$conn""
+        echo "sleep 3"
+        echo "nmcli connection up "$conn""
+        echo "sleep 3"
+        echo "nmcli connection up "$conn""
+        echo "sleep 3"
         #echo "sleep 15"
 echo "iptables -I FORWARD -o eth0 -j DROP"
 echo "iptables -I FORWARD -i eth0 -j DROP"
@@ -1843,7 +1851,7 @@ echo
 
         8)
             
-            clean_all_wireguard
+            clean_all_wireguards
             
             ;; 
 
